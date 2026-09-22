@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://manojkhatri0025-ops.github.io/sitemap.xml
