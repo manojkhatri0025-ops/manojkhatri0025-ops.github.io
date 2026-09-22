@@ -1,5 +1,5 @@
 
-:root{--bg:#080812;--bg2:#0f0f20;--card:rgba(255,255,255,0.03);--border:rgba(255,255,255,0.07);--text:#e2e2f0;--muted:#9090b8;--muted2:#7070a0;--primary:#6c63ff;--accent:#43cea2;--nav-bg:rgba(8,8,18,0.9);--shadow:rgba(108,99,255,0.35)}
+:root{--bg:#080812;--bg2:#0f0f20;--card:rgba(255,255,255,0.03);--border:rgba(255,255,255,0.07);--text:#e2e2f0;--muted:#9090b8;--muted2:#9999be;--primary:#6c63ff;--accent:#43cea2;--nav-bg:rgba(8,8,18,0.9);--shadow:rgba(108,99,255,0.35)}
 [data-theme="light"]{--bg:#f4f4ff;--bg2:#eaeaff;--card:rgba(108,99,255,0.06);--border:rgba(108,99,255,0.15);--text:#1a1a3a;--muted:#4a4a7a;--muted2:#5a5a90;--primary:#5a52d5;--accent:#2eaa80;--nav-bg:rgba(244,244,255,0.93);--shadow:rgba(90,82,213,0.25)}
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
 body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background .3s,color .3s}
@@ -115,8 +115,9 @@ footer{text-align:center;padding:28px;border-top:1px solid var(--border);color:v
 
 
 /* Navigation, keyboard access, and small-screen refinements. */
-:root{--muted2:#9999be}
 [data-theme="light"]{--accent:#187855}
+.sl,.loc,.project-link{color:#b2aaff}
+[data-theme="light"] .sl,[data-theme="light"] .loc,[data-theme="light"] .project-link{color:var(--primary)}
 html{scroll-padding-top:100px}
 main:focus{outline:none}
 .skip-link{position:fixed;left:16px;top:-80px;z-index:10001;background:var(--bg);color:var(--text);padding:14px;border:2px solid var(--primary);border-radius:8px}
@@ -130,7 +131,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--primary);outline-of
 .email-link{display:block;line-height:1.6}
 #menu-btn{display:none;background:var(--card);border:1px solid var(--border);border-radius:9px;color:var(--text);font:600 13px Inter,sans-serif;padding:10px 12px;cursor:pointer;min-height:44px}
 #theme-btn{width:44px;height:44px}
-.project-link{margin-top:22px;color:var(--primary);font-size:14px;font-weight:600;display:inline-block;text-underline-offset:5px}
+.project-link{margin-top:22px;font-size:14px;font-weight:600;display:inline-block;text-underline-offset:5px}
 .project-tag{display:inline-block;margin-bottom:14px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--accent);font-weight:700}
 .wa-btn svg{width:28px;height:28px;fill:currentColor;color:white}
 .wa-ping{display:none}
