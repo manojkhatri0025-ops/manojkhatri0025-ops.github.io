@@ -1,6 +1,6 @@
 # Manoj Khatri's portfolio
 
-Personal portfolio published with GitHub Pages at https://manojkhatri0025-ops.github.io/.
+Personal portfolio published with GitHub Pages at https://manojkhatri.name.np/.
 
 ## Edit the site
 
