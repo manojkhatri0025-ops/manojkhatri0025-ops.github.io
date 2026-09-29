@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 Sitemap: https://manojkhatri.name.np/sitemap.xml
 Sitemap: https://manojkhatri.name.np/cv-studio-pro/sitemap.xml
+
+Sitemap: https://manojkhatri.name.np/pixellite/sitemap.xml
