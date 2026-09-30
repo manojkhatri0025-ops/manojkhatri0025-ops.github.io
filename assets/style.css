@@ -148,4 +148,38 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--primary);outline-of
  .wa-float{bottom:14px;right:14px}.wa-btn{width:48px;height:48px}
  footer{padding:28px 64px 36px 24px;line-height:1.8}
 }
+/* Project showcase */
+#projects{background:radial-gradient(ellipse at 15% 35%,rgba(108,99,255,.06),transparent 55%)}
+.projects-heading{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.projects-heading .st{margin-bottom:0;max-width:650px}
+.tools-note{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;border:1px solid var(--border);border-radius:50px;padding:9px 13px;font-size:12px;font-weight:600;color:var(--muted2);background:var(--card)}
+.tools-note>span{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.projects-intro{max-width:620px;font-size:15px;line-height:1.8;color:var(--muted);margin:18px 0 32px}
+.tools-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.tool-card{--tool-ink:#b6a8ff;--tool-tint:rgba(164,140,255,.09);display:flex;flex-direction:column;min-width:0;padding:30px;border:1px solid var(--border);border-radius:22px;background:linear-gradient(135deg,var(--tool-tint),transparent 65%),var(--bg2);position:relative;transition:transform .25s,border-color .25s,box-shadow .25s}
+.tool-toolbox{--tool-ink:#65dcc5;--tool-tint:rgba(67,206,162,.09)}
+.tool-pixel{--tool-ink:#8dc7ff;--tool-tint:rgba(89,164,255,.09)}
+.tool-cv{--tool-ink:#f2c181;--tool-tint:rgba(245,176,88,.09)}
+.tool-card:hover,.tool-card:focus-within{border-color:var(--tool-ink);box-shadow:0 16px 38px rgba(0,0,0,.12)}
+@media(hover:hover){.tool-card:hover{transform:translateY(-4px)}}
+.tool-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:25px}
+.tool-icon{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:16px;color:var(--tool-ink);background:var(--tool-tint);border:1px solid var(--border)}
+.tool-icon svg{width:30px;height:30px}
+.tool-number{font-size:13px;letter-spacing:2px;font-weight:500;color:var(--muted2)}
+.tool-category{font-size:10px;font-weight:700;line-height:1.6;letter-spacing:1.2px;text-transform:uppercase;color:var(--tool-ink);margin-bottom:8px}
+.tool-card h3{font-size:26px;line-height:1.25;letter-spacing:-.6px;margin-bottom:12px}
+.tool-description{font-size:14px;line-height:1.8;color:var(--muted);margin-bottom:20px;max-width:400px}
+.tool-tags{display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:0;margin:auto 0 25px}
+.tool-tags li{font-size:10.5px;line-height:1.5;padding:5px 9px;border:1px solid var(--border);border-radius:6px;color:var(--muted2);background:var(--card)}
+.tool-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;padding:13px 17px;border-radius:11px;font-size:13px;font-weight:700;color:var(--tool-ink);background:var(--tool-tint);border:1px solid var(--border);text-decoration:none;transition:background .2s,border-color .2s}
+.tool-cta:hover{border-color:var(--tool-ink);background:var(--card)}
+.tool-cta>span{font-size:22px;line-height:1}
+.android-project{display:flex;align-items:center;gap:20px;padding:24px 28px;margin-top:22px;border:1px solid var(--border);border-radius:18px;background:var(--card)}
+.android-icon{flex-shrink:0;width:46px;color:var(--muted2)}
+.android-icon svg{width:36px;height:36px}
+.android-copy{flex:1;min-width:0}.android-copy .project-tag{font-size:9px;margin-bottom:5px}.android-copy h3{font-size:17px;margin-bottom:6px}.android-copy p{font-size:12px;line-height:1.7;color:var(--muted)}
+.android-project .project-link{margin:0;font-size:12px;line-height:1.8}
+[data-theme="light"] .tool-card{--tool-ink:#5841ad;background:linear-gradient(135deg,var(--tool-tint),transparent 70%),#fff}
+[data-theme="light"] .tool-toolbox{--tool-ink:#126953}[data-theme="light"] .tool-pixel{--tool-ink:#235d9a}[data-theme="light"] .tool-cv{--tool-ink:#875012}
+@media(max-width:768px){.projects-heading{display:block}.tools-note{margin-top:18px}.tools-grid{grid-template-columns:1fr}.tool-card{padding:26px}.android-project{flex-wrap:wrap;padding:24px;gap:14px}.android-project .project-link{margin-left:60px}.tool-card h3{font-size:25px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
